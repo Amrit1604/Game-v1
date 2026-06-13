@@ -154,7 +154,7 @@ class PortalScene(BaseScene):
             if self.black_alpha >= 255:
                 self.black_alpha = 255
                 self._save_record()
-                self.state = "complete"
+                self.next_scene = "reincarnation"
 
     def _draw_portal(self, screen):
         center = (640, 360)

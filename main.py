@@ -7,6 +7,7 @@ from scenes.s4_goddess import GoddessScene
 from scenes.s5_identity import IdentityScene
 from scenes.s6_judgment import JudgmentScene
 from scenes.s7_portal import PortalScene
+from scenes.world_scene import ReincarnationScene, WorldIntroductionScene
 from ui.particle_system import ParticleSystem
 from ui.phase1_ui import VOID_BLACK, load_font
 
@@ -49,6 +50,8 @@ scene_factories = {
     "identity": IdentityScene,
     "judgment": JudgmentScene,
     "portal": PortalScene,
+    "reincarnation": ReincarnationScene,
+    "world_intro": WorldIntroductionScene,
 }
 
 
