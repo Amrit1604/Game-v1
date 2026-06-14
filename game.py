@@ -18,7 +18,8 @@ font_big = pygame.font.SysFont("arial", 48, bold=True)
 font_title = pygame.font.SysFont("arial", 64, bold=True)
 
 # ---------------- CONFIG: sprite paths ----------------
-BASE = r"D:\exampleGame\The Red girl tileset\Player"
+# BASE = r"D:\exampleGame\The Red girl tileset\Player"
+BASE = r"E:\Projects\Game-v2\The Red girl tileset\Player"
 IDLE_PATH = os.path.join(BASE, "Red_Girl_Idle.png")
 WALK_PATH = os.path.join(BASE, "Red_Girl_Walk.png")
 
