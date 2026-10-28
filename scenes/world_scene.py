@@ -698,7 +698,7 @@ class WorldIntroductionScene(BaseScene):
     def handle_events(self, events):
         for event in events:
             if event.type == pygame.KEYDOWN and event.key == pygame.K_RETURN:
-                self.next_scene = "title"
+                self.next_scene = "map"
 
     def update(self, dt):
         self.elapsed += dt
@@ -754,6 +754,6 @@ class WorldIntroductionScene(BaseScene):
             
         # Continue Prompt
         prompt_pulse = int(100 + 120 * (0.5 + 0.5 * math.sin(self.elapsed * 2.2)))
-        prompt = self.ui_font.render("✦  Press ENTER to Return to Title  ✦", True, (240, 208, 120))
+        prompt = self.ui_font.render("✦  Press ENTER to View the Kingdom Map  ✦", True, (240, 208, 120))
         prompt.set_alpha(int(min(prompt_pulse, self.text_fade_alpha)))
         screen.blit(prompt, (width // 2 - prompt.get_width() // 2, height - 100))
